@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faCode, faChartLine, faBolt, faUserShield } from "@fortawesome/free-solid-svg-icons";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function Seo() {
+  const [typewriter] = useTypewriter({
+    words: ['SEO Services'],
+    loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 70,
+  })
   return (
     <div className='flex flex-col md:flex-row h-auto bg-[#FBFAF6] w-full pb-0 md:pb-10'>
       {/* Image Section */}
@@ -18,7 +25,7 @@ function Seo() {
           Search Engine Optimization
         </h1>
         <p className='text-lg sm:text-xl md:text-3xl mt-4 font-medium sm:mt-6 md:mt-10 text-center md:text-left'>
-        Boost your search engine rankings with our <br /> <span className="text-orange-500">SEO Services</span>!
+        Boost your search engine rankings with our <br /> <span className="text-orange-500">{typewriter}</span>!
         </p>
 
         <p className='text-base md:text-lg mt-6 md:mt-10 text-center md:text-left w-full md:w-[85%]'>

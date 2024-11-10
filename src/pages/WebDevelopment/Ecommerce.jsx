@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faLaptopCode, faShoppingCart, faShieldAlt, faCogs } from "@fortawesome/free-solid-svg-icons";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function Ecommerce() {
+  const [typewriter] = useTypewriter({
+    words: ['E-Commerce Development Services'],
+    loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 70,
+  })
   return (
     <div className='w-full h-auto bg-[#FCFAF6] flex flex-col md:flex-row'>
       {/* Image Section */}
@@ -19,7 +26,7 @@ function Ecommerce() {
         </h1>
 
         <p className='text-lg sm:text-xl md:text-3xl mt-4 font-medium sm:mt-6 md:mt-10 text-center md:text-left'>
-          Build a robust online store with our <br /> <span className="text-orange-500">E-Commerce Development Services</span>!
+          Build a robust online store with our <br /> <span className="text-orange-500">{typewriter}</span>!
         </p>
 
         <p className='text-sm sm:text-base md:text-lg mt-4 sm:mt-6 md:mt-10 text-center md:text-left'>

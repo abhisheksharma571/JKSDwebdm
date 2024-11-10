@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faAd, faMousePointer, faDollarSign, faChartBar } from "@fortawesome/free-solid-svg-icons";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function GoogleAds() {
+  const [typewriter] = useTypewriter({
+    words: ['Google Ads Services'],
+    loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 70,
+  })
   return (
     <div className='flex flex-col md:flex-row h-auto bg-[#08528e] w-full pb-0 md:pb-10'>
       {/* Text Section */}
@@ -14,7 +21,7 @@ function GoogleAds() {
         </h1>
 
         <p className='text-lg sm:text-xl md:text-3xl mt-4 font-medium sm:mt-6 md:mt-10 text-center md:text-left text-white'>
-        Maximize your online visibility with our <br /> <span className="text-orange-500">Google Ads Services</span>!
+        Maximize your online visibility with our <br /> <span className="text-orange-500">{typewriter}</span>!
         </p>
 
         <p className='text-base md:text-lg mt-6 md:mt-10 text-white w-full md:w-[85%] text-center md:text-left'>

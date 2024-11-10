@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faSearchDollar, faBullseye, faChartPie, faMoneyBillWave } from "@fortawesome/free-solid-svg-icons";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function Smm() {
+  const [typewriter] = useTypewriter({
+    words: ['JKSD'],
+    loop: {},
+    typeSpeed: 200,
+    deleteSpeed: 170,
+  })
   return (
     <div className='w-full h-auto bg-[#FCFAF6] flex flex-col md:flex-row'>
       {/* Image Section */}
@@ -19,7 +26,7 @@ function Smm() {
         </h1>
 
         <p className='text-lg sm:text-xl md:text-3xl mt-4 font-medium sm:mt-6 md:mt-10 text-center md:text-left'>
-          Transform clicks into customers with <br /> <span className="text-orange-500">JKSD</span> magic!
+          Transform clicks into customers with <br /> <span className="text-orange-500">{typewriter}</span> magic!
         </p>
 
         <p className='text-sm sm:text-base md:text-lg mt-4 sm:mt-6 md:mt-10 text-center md:text-left'>

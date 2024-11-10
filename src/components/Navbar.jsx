@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink, Link } from 'react-router-dom';
+import ScrollProgress from './ScrollProgress';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -10,8 +11,8 @@ function Navbar() {
     };
 
     return (
-        <header className="bg-white py-3 w-full z-50 transition-all duration-300 sticky top-0">
-
+        <header className="bg-white bg-opacity-50 backdrop-blur-lg py-3 w-full z-50 transition-all duration-300 sticky top-0">
+            <ScrollProgress />
             <nav className="flex justify-between items-center w-[94%] h-12 mx-auto">
                 <Link to="/">
                     <img

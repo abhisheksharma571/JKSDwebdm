@@ -12,8 +12,8 @@ const reviews = [
     preview: "./websiteThumbnails/example1.png",
   },
   {
-    name: "Spring Almas",
-    image: "./clientLogo/spring-cafe-logo.png",
+    name: "Divya Padma",
+    image: "./clientLogo/divya-padma.png",
     review:
       "From the first meeting, the JKSD team understood our needs and delivered a custom website that exceeded our expectations. Their attention to detail and expertise in web development resulted in a beautiful and functional site that our customers love.",
     website: "https://springcafe.in",
@@ -21,7 +21,7 @@ const reviews = [
   },
   {
     name: "JKSD Home Automation",
-    image: "./clientLogo/jksd-logo.jpeg",
+    image: "./clientLogo/jksd-automation.png",
     review:
       "The JKSD team provided exceptional service, delivering a visually appealing website that has boosted our online presence. Their post-launch support and dedication to helping us optimize the site have been invaluable.",
     website: "https://jksd.in/",

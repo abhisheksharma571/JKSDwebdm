@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faSearchDollar, faBullseye, faChartPie, faMoneyBillWave } from "@fortawesome/free-solid-svg-icons";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function Email() {
+  const [typewriter] = useTypewriter({
+    words: ['Email Marketing Services'],
+    loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 70,
+  })
   return (
     <div className='flex flex-col md:flex-row h-auto bg-[#08528e] w-full pb-0 md:pb-10'>
       {/* Text Section */}
@@ -14,7 +21,7 @@ function Email() {
         </h1>
 
         <p className='text-lg sm:text-xl md:text-3xl mt-4 font-medium sm:mt-6 md:mt-10 text-center md:text-left text-white'>
-        Engage your audience effectively with our <br /> <span className="text-orange-500">Email Marketing Services</span>!
+        Engage your audience effectively with our <br /> <span className="text-orange-500">{typewriter}</span>!
         </p>
 
         <p className='text-base md:text-lg mt-6 md:mt-10 text-white w-full md:w-[85%] text-center md:text-left'>
